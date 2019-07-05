@@ -6,6 +6,10 @@ class MainController {
         $this->show('home');
     }
 
+    public function legalMentions() {
+        echo 'Ici, du blabla interminable';
+    }
+
     public function error() {
         // on modifie "l'enveloppe" HTTP pour changer le code de réponse
         // de base, le code est 200 (OK) mais ici on veut informer le client de son erreur
