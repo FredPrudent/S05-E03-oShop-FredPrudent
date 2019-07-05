@@ -14,4 +14,7 @@ switch ($route) {
     case '/':
         $controller->home();
         break;
+    default:
+        $controller->error();
+        break;
 }
