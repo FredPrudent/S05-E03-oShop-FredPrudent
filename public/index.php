@@ -1,5 +1,21 @@
 <?php
 
+require __DIR__."/../vendor/autoload.php";
+
+$maVarCompliquee = [
+    "tata" => [
+        "toto" => "titi",
+        "tutu" => 42,
+        "test" => [
+            "tete" => true,
+            "tyty" => 22
+        ]
+    ]
+        ];
+
+dump($maVarCompliquee);
+exit;
+
 // étape incontournable si je veux instancier mon controller
 // il faut bien que PHP soit au courant de l'existence de la classe
 require_once __DIR__."/../app/controllers/MainController.php";
